@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Polo.master.cs" Inherits="ProvaDB.Polo" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         <title> Polo 360 </title>
+    </asp:ContentPlaceHolder>
+
+    <link href="/css/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header">
+                <div id="logo">
+                    <a href="#"><img src="/images/LOGO-PW2-2_03.png" width="350" height="97" alt="logo" /></a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <asp:HyperLink ID="lnkHome" NavigateUrl="~/Default.aspx" runat="server">home</asp:HyperLink><br /><span>Back to home</span>
+                        </li>
+                        <li><a href="#">products</a><br /><span>What we have for you</span></li>
+                        <li><a href="#">services</a><br /><span>Things we do</span></li>
+                        <li><a href="#">blog</a><br /><span>Follow our updates</span></li>
+                        <li>
+                            <asp:HyperLink ID="lnkContatti" NavigateUrl="~/Contatti.aspx" runat="server">contact</asp:HyperLink><br /><span>Way to reach us</span>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div id="slide"><img src="/images/head-bottom_07.png" width="940" height="341" /></div>
+            
+            <div id="main">
+                <asp:ContentPlaceHolder ID="MainContentID" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+        <div id="footer-back">
+            <div id="footer">
+                <div id="footer-sx">
+                    <p>Site Designed and Developed by me.</p>
+                    <p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Products</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a></p>
+                </div>
+
+                <div id="footer-dx">
+                    <p>Copyright 2020 All Rights Reserved.</p>
+                </div>
+            </div> 
+
+        </div>
+
+        
+    </form>
+</body>
+</html>
